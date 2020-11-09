@@ -10,7 +10,8 @@ pipeline {
       }
       steps {
         sh 'pwd'
-        sh 'docker ps'
+        git(url: 'https://github.com/irvinstone/POO_PHP', branch: 'master')
+        sh 'ls'
       }
     }
 
