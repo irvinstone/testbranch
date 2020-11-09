@@ -5,8 +5,8 @@ pipeline {
       agent any
       steps {
         sh 'pwd'
-        git(url: 'https://github.com/irvinstone/POO_PHP', branch: 'master')
-        sh 'ls'
+        git(url: 'https://github.com/irvinstone/onpe-back', branch: 'master')
+        sh 'make pull'
       }
     }
 
