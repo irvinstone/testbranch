@@ -1,18 +1,34 @@
 pipeline {
   agent any
   stages {
-    stage('pull repo') {
-      agent any
-      steps {
-        sh 'pwd'
-        git(url: 'https://github.com/irvinstone/onpe-back', branch: 'master')
-        sh 'make pull'
+    stage('pull front repo') {
+      parallel {
+        stage('pull front repo') {
+          agent any
+          steps {
+            sh 'pwd'
+            git(url: 'https://github.com/irvinstone/ws-biblioteca', branch: 'master')
+          }
+        }
+
+        stage('pull back repo') {
+          steps {
+            git(url: 'https://github.com/irvinstone/ws-biblioteca', branch: 'master')
+          }
+        }
+
       }
     }
 
-    stage('Print') {
+    stage('Build backend') {
       steps {
-        echo 'probando'
+        sh 'docker-compose up -d'
+      }
+    }
+
+    stage('Build front end') {
+      steps {
+        echo 'build front'
       }
     }
 
