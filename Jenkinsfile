@@ -2,12 +2,7 @@ pipeline {
   agent any
   stages {
     stage('pull repo') {
-      agent {
-        docker {
-          image 'amazonlinux'
-        }
-
-      }
+      agent any
       steps {
         sh 'pwd'
         git(url: 'https://github.com/irvinstone/POO_PHP', branch: 'master')
