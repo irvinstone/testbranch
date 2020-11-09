@@ -22,6 +22,8 @@ pipeline {
 
     stage('Build backend') {
       steps {
+        sh 'ls'
+        sh 'pwd'
         sh 'docker-compose up -d'
       }
     }
