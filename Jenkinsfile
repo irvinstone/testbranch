@@ -24,6 +24,7 @@ pipeline {
       steps {
         sh 'ls'
         sh 'pwd'
+        sh 'docker ps'
         sh 'docker-compose up -d'
       }
     }
