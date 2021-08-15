@@ -1,36 +1,37 @@
 # testbranch
 ### Comandos Git:
 
-Verficacion de estados de cambio de directorios
+
+- Verficacion de estados de cambio de directorios
 ```git status ``` 
 
-Ver realizados al archivo.
+- Ver realizados al archivo.
 ```git diff -->  ``` 
 
-Deshacer cambios realizados .
+- Deshacer cambios realizados .
 ```git checkout --> ``` 
 
-Pasar de rama.
+- Pasar de rama.
 ``` git checkout user --> ``` 
 
-Creación de nueva rama.
+- Creación de nueva rama.
 ``` git branch --> ``` 
 
-Clonar gits de GiHub.
+- Clonar gits de GiHub.
 ``` git clone --> ``` 
 
-Ponerlo en verde. 
+- Ponerlo en verde. 
 ``` git commit - m  ```
 
-Añadir. 
+- Añadir. 
 ``` git add  ``` 
 
-Subir archivo.
+- Subir archivo.
 ``` git push origin rama ``` 
 
-Despues de pull.
+- Despues de pull.
 ``` git mergetool ``` 
 
-Bajada de  codigo.
+- Bajada de  codigo.
 ``` git pull ``` 
 
