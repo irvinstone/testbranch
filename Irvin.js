@@ -1,5 +1,5 @@
-console.log("Nombre: ");
-console.log("Segundo nombre: ");
-console.log("Apellido paterno: ");
-console.log("Apellisdo materno: ");
-console.log("Edad: ");
+console.log("Nombre: Irvin ");
+console.log("Segundo nombre: Luis ");
+console.log("Apellido paterno: León ");
+console.log("Apellisdo materno:Llallihuaman  ");
+console.log("Edad: 29");
